@@ -1,0 +1,22 @@
+{
+    "name": "wjezowski/standardized-json-responses",
+    "description": "StandardizedJsonResponse provides always the same structure of json data. Regardless of the programmer.",
+    "type": "library",
+    "require": {
+        "php": "^8.2",
+        "symfony/http-foundation": "^v6.3.5"
+    },
+    "license": "ISC",
+    "autoload": {
+        "psr-4": {
+            "wjezowski\\Library\\StandardizedJsonResponses\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Wojciech Jeżowski",
+            "email": "dirkuu@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
