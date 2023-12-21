@@ -12,6 +12,8 @@ The main job of this library is to make every response the same format.
 In addition, this library provides classes with the basic http codes such as
 - 200 = JsonResponseOk
 - 400 = JsonResponseBadRequest
+- 401 = JsonResponseUnauthorized
+- 403 = JsonResponseForbidden
 - 404 = JsonResponseNotFound
 - 500 = JsonResponseInternalServerError
 
