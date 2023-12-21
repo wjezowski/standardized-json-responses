@@ -19,6 +19,8 @@ class StandardizedJsonResponse extends JsonResponse
         array $headers = [],
         bool $json = false
     ) {
+        $this->checkAlerts($alerts);
+
         parent::__construct(
             (object) [
                 'alerts' => $alerts,
@@ -28,5 +30,14 @@ class StandardizedJsonResponse extends JsonResponse
             $headers,
             $json
         );
+    }
+
+    protected function checkAlerts(array $alerts): void
+    {
+        foreach ($alerts as $alert) {
+            if (!is_a($alert, AlertDto::class)) {
+                throw new \InvalidArgumentException('Given array contain element different than ' . AlertDto::class .'. Given element type: ' . get_class($alert));
+            }
+        }
     }
 }
