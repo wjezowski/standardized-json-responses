@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace wjezowski\Library\StandardizedJsonResponses\Response;
 
-class JsonResponseInternalServerError extends StandardizedJsonResponse
+final class JsonResponseInternalServerError extends StandardizedJsonResponse
 {
     /**
      * @inheritDoc

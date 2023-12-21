@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace wjezowski\Library\StandardizedJsonResponses\Response;
 
-class JsonResponseOk extends StandardizedJsonResponse
+final class JsonResponseOk extends StandardizedJsonResponse
 {
     /**
      * @inheritDoc
