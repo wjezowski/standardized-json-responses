@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace wjezowski\Library\StandardizedJsonResponses\Alert;
 
-class AlertDto implements \JsonSerializable
+final readonly class AlertDto implements \JsonSerializable
 {
     public function __construct(
-        public readonly string $message,
-        public readonly AlertSeverityEnum $alertSeverityEnum
+        public string            $message,
+        public AlertSeverityEnum $alertSeverityEnum
     ) {}
 
     public function jsonSerialize(): object
